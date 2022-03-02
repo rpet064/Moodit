@@ -1,5 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.css";
 
+/* html elements */
+
 * {
   padding: 0;
   margin: 0;
@@ -8,52 +10,101 @@
 html {
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   background: #eee;
   padding: 0 16px;
+  text-align: center;
 }
 
 .nav {
-  background-color: #fa26a0;
+  background-color: #b762c1;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
+.nav h2 {
   color: #fff;
   font-family: "McLaren", cursive;
   font-weight: 200;
 }
 
+/* title component */
+
+.header {
+  padding: 4% 2% 2% 2%;
+}
+
+/* to do list */
+
+#toDoList {
+  background: #f1f5f8;
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  margin: 2% 10% 2% 10%;
+  box-sizing: border-box;
+}
+
+.form input {
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 1rem;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px #fdcb6e;
+  font-size: 1.25rem;
+  color: hsla(260, 2%, 25%, 0.7);
+  width: 70%;
+  margin-bottom: 1%;
+}
+
+ul {
+  text-align: left;
+  position: relative;
+  padding: 1rem 0.5rem 1rem 5%;
+  margin: 0.5% 1% 0.5% 10%;
+}
+
+/* to do list buttons */
+
+#toDoButton {
+  position: relative;
+  top: 0.5rem;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  margin: 2% 2% 2% 2%;
+}
+
+#toDoButton span {
+  background: #f1f5f8;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid hsl(198, 1%, 29%);
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+#toDoButton span:hover {
+  color: #fff;
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+}
+
+/* footer */
+
 footer {
-  position: absolute;
-  text-align: center;
-  bottom: 0;
+  position: fixed;
   width: 100%;
+  bottom: 0;
   height: 2.5rem;
-  background-color: #ee91bc;
+  background-color: #e2c0e6;
 }
 
 footer p {
   color: #ccc;
-}
-.card {
-  background: #fff;
-  border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
-  padding: 10px;
-  width: 240px;
-  margin: 16px;
-  float: left;
-}
-.card h1 {
-  font-size: 1.1em;
-  margin-bottom: 6px;
-}
-.card p {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
 }
