@@ -1,6 +1,6 @@
-export default function Header(props: any) {
+export default function Title(props: any) {
   return (
-    <div className="header">
+    <div className="title">
       <h1>{props.titleText}</h1>
       <h3>{props.subTitleText}</h3>
     </div>

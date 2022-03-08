@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
-import Header from "./Header";
+import Title from "../Title";
 
 export default function ToDoList() {
   const [items, setItems] = useState([]) as any;
@@ -22,10 +22,7 @@ export default function ToDoList() {
 
   return (
     <div>
-      <Header
-        titleText="To Do List"
-        subTitleText="What do we need to achieve today?"
-      />
+      <Title titleText="To-Do List" subTitleText="Feeling Motivated?" />
       <div id="toDoList">
         <InputArea onAdd={addItem} />
         <div>
